@@ -134,7 +134,7 @@ def build_pdf():
     story += job(
         "AWS BuildHers+ Mentor",
         "AWS Community",          # ← CORRECTED
-        "October 2025 – Present",
+        "October 2025 – January 2026",
         [
             "Provide biweekly professional mentorship to women in technology, supporting AWS cloud learning and career development.",
             "Part of a structured program focused on fostering inclusive growth in cloud computing.",
