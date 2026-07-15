@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaye Cristine Tolentino — Site Reliability Engineer - AI Ops</title>
+  <meta name="description" content="Portfolio of Kaye Cristine Tolentino — Site Reliability Engineer - AI Ops, AWS Certified Solutions Architect, licensed Electronics Engineer, and builder of production full-stack & AI web applications." />
+  <meta name="author" content="Kaye Cristine Tolentino" />
+  <meta name="keywords" content="Site Reliability Engineer, AI Ops, SRE, Cloud Engineer, Solutions Architect, AWS, Kubernetes, Technical Trainer, Full Stack Developer, AI Automation" />
+  
+  <!-- Open Graph / LinkedIn Preview Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kaye Cristine Tolentino — Site Reliability Engineer - AI Ops" />
+  <meta property="og:description" content="Building enterprise cloud infrastructure, training the next generation of engineers, and shipping 4+ live full-stack AI & web applications built from scratch." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/kayecristine/portfolio/main/og-preview.png" />
+  <meta property="og:image:alt" content="Kaye Cristine Tolentino Portfolio Preview" />
+  <meta property="og:site_name" content="Kaye Cristine Tolentino Portfolio" />
+
+  <!-- Twitter Card / LinkedIn Summary -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kaye Cristine Tolentino — Site Reliability Engineer - AI Ops" />
+  <meta name="twitter:description" content="Building enterprise cloud infrastructure, training 10,000+ engineers, and shipping live full-stack & AI web applications." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/kayecristine/portfolio/main/og-preview.png" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">KCT<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact" class="nav-link cta-btn">Contact</a></li>
+      </ul>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#certifications" class="mobile-link">Certs</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">Kaye Cristine<br /><span class="gradient-text">Tolentino</span></h1>
+      <p class="hero-title">Site Reliability Engineer - AI Ops <span class="separator">·</span> Electronics Engineer</p>
+      <p class="hero-tagline">Building cloud infrastructure, training the next generation of engineers, and shipping full-stack products from scratch.</p>
+      <div class="hero-chips">
+        <span class="chip">☁️ AWS Certified SA</span>
+        <span class="chip">⎈ KCNA</span>
+        <span class="chip">🤖 AI Practitioner</span>
+        <span class="chip">📍 Taguig City, Philippines</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="Resume_Kaye Cristine Tolentino (v2).pdf" class="btn-secondary" download>Download CV</a>
+        <a href="https://github.com/kctolentino" class="btn-social" target="_blank" rel="noopener" aria-label="GitHub Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/kayecristine" class="btn-social" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">// About Me</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">The story so far</h2>
+          <p class="about-desc">I'm a technical professional who lives at the intersection of <strong>cloud engineering</strong> and <strong>education</strong>. I design and implement AWS architectures for enterprise clients by day, and mentor the next wave of cloud engineers through structured programs at AWS.</p>
+          <p class="about-desc">With a background in Electronics Engineering and 5+ years of board exam instruction, I've trained <strong>10,000+ engineers</strong> across the Philippines and internationally. Now I apply that same passion for clarity to cloud infrastructure and AI-powered tooling.</p>
+          <p class="about-desc">Outside of work, I build full-stack applications — from AI-powered finance platforms and property management PWAs to desktop productivity OS tools and creator studio labs — because the best way to understand a technology is to ship something real with it.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-number">10K+</div>
+              <div class="stat-label">Engineers Trained</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Years Teaching</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">6</div>
+              <div class="stat-label">Certifications</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">4</div>
+              <div class="stat-label">Live Apps</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="avatar-container">
+            <div class="avatar-ring ring-1"></div>
+            <div class="avatar-ring ring-2"></div>
+            <div class="avatar-ring ring-3"></div>
+            <div class="avatar-initials">KCT</div>
+          </div>
+          <div class="floating-card card-aws">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" class="card-logo" />
+            <span>Solutions Architect</span>
+          </div>
+          <div class="floating-card card-k8s">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="K8s" class="card-logo" />
+            <span>KCNA Certified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="section-label">// Experience</div>
+      <h2 class="section-title">Where I've worked</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker current"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Cloud Engineer Technical Trainer</h3>
+                <div class="company">Apper Digital Inc.</div>
+              </div>
+              <div class="timeline-meta">
+                <span class="badge-current">Current</span>
+                <span class="date">Nov 2024 – Present</span>
+              </div>
+            </div>
+            <ul class="role-bullets">
+              <li>Built automated assessment system using <strong>AWS Lambda, DynamoDB & Step Functions</strong> for real-time student evaluation and grading.</li>
+              <li>Designed hands-on AWS labs covering <strong>EC2, ECS, S3, VPC, IAM</strong> and serverless architectures for enterprise training programs.</li>
+              <li>Developed AI-powered <strong>Study Bot</strong> using n8n workflow automation to generate cloud certification practice questions.</li>
+              <li>Delivered cloud and Kubernetes training to enterprise clients including <strong>DLSU-Taft, SageSoft, and GCash</strong>.</li>
+              <li>Created CKAD assessment labs using Amazon ECS for container orchestration and deployment testing.</li>
+              <li>Trained professionals for <strong>KCNA certification</strong> covering Kubernetes and cloud-native technologies.</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="tech-tag">AWS Lambda</span>
+              <span class="tech-tag">DynamoDB</span>
+              <span class="tech-tag">Step Functions</span>
+              <span class="tech-tag">ECS</span>
+              <span class="tech-tag">Kubernetes</span>
+              <span class="tech-tag">n8n</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker current"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">AWS BuildHers+ Mentor</h3>
+                <div class="company">AWS Community</div>
+              </div>
+              <div class="timeline-meta">
+                <span class="badge-current">Current</span>
+                <span class="date">Oct 2025 – Present</span>
+              </div>
+            </div>
+            <ul class="role-bullets">
+              <li>Provide biweekly professional mentorship to <strong>women in technology</strong>, supporting AWS cloud learning and career development.</li>
+              <li>Part of a structured program focused on fostering <strong>inclusive growth</strong> in cloud computing.</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="tech-tag">Mentorship</span>
+              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">Cloud Computing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Engineering Board Exam Instructor</h3>
+                <div class="company">Excel Review Center</div>
+              </div>
+              <div class="timeline-meta">
+                <span class="date">Jun 2019 – Nov 2024</span>
+              </div>
+            </div>
+            <ul class="role-bullets">
+              <li>Trained <strong>10,000+ engineering students</strong> through online (300/session) and in-person (150/session) review programs.</li>
+              <li>Delivered programs across the Philippines and internationally in <strong>Qatar, Saudi Arabia, and UAE</strong>.</li>
+              <li>Partnered with top universities: Mapua, Malayan Colleges, Saint Louis University, LPU, PUP.</li>
+              <li>Served as <strong>panelist and quiz master</strong> for national and regional Electronics Engineering competitions.</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="tech-tag">Electronics Engineering</span>
+              <span class="tech-tag">Curriculum Design</span>
+              <span class="tech-tag">Public Speaking</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Content Creator</h3>
+                <div class="company">Alterguru Ph</div>
+              </div>
+              <div class="timeline-meta">
+                <span class="date">Aug 2020 – Mar 2023</span>
+              </div>
+            </div>
+            <ul class="role-bullets">
+              <li>Created educational science content for high school students and video series on technical problem-solving.</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="tech-tag">Content Creation</span>
+              <span class="tech-tag">Science Education</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label">// Projects</div>
+      <h2 class="section-title">Things I've built</h2>
+      <p class="section-subtitle">Full-stack applications built from the ground up — production-grade, deployed, and in active use.</p>
+
+      <div class="projects-grid">
+
+        <!-- Momentum App -->
+        <div class="project-card featured" id="project-momentum">
+          <div class="project-glow glow-blue"></div>
+          <div class="project-header">
+            <div class="project-icon">💰</div>
+            <div class="project-badges">
+              <span class="badge-featured">Featured</span>
+              <span class="badge-live">Live on Web + iOS</span>
+            </div>
+          </div>
+          <h3 class="project-name">Momentum</h3>
+          <p class="project-tagline">Personal Finance & Agentic AI Assistant</p>
+          <p class="project-desc">A premium, cross-platform personal finance app with an <strong>AI agent powered by Google Gemini</strong> that understands natural language to autonomously log transactions. Available as a web app on Vercel and as a native iOS app via Capacitor with FaceID biometric security.</p>
+          <div class="project-highlights">
+            <div class="highlight">
+              <span class="highlight-icon">🤖</span>
+              <span>Agentic AI with Gemini tool-calling</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">📱</span>
+              <span>Native iOS with FaceID & Google OAuth</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">📊</span>
+              <span>Multi-account, budgets, goals, investments</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">🔐</span>
+              <span>Supabase PostgreSQL with RLS</span>
+            </div>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">React 19</span>
+            <span class="stack-tag">Vite</span>
+            <span class="stack-tag">Supabase</span>
+            <span class="stack-tag">Gemini AI</span>
+            <span class="stack-tag">Capacitor</span>
+            <span class="stack-tag">Vercel</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kctolentino/finance-management-app" class="project-link" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- VVL App -->
+        <div class="project-card featured" id="project-vvl">
+          <div class="project-glow glow-purple"></div>
+          <div class="project-header">
+            <div class="project-icon">🏨</div>
+            <div class="project-badges">
+              <span class="badge-featured">Featured</span>
+              <span class="badge-live">Live PWA</span>
+            </div>
+          </div>
+          <h3 class="project-name">Venice Vista Lodge</h3>
+          <p class="project-tagline">Property Management Dashboard</p>
+          <p class="project-desc">A full-stack, mobile-first <strong>Progressive Web App</strong> for managing the day-to-day operations of a lodge — income tracking, booking management synced from Google Calendar, bill reminders, bank ledger, and role-based team access, all in one premium interface.</p>
+          <div class="project-highlights">
+            <div class="highlight">
+              <span class="highlight-icon">📅</span>
+              <span>Live Google Calendar booking sync</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">👥</span>
+              <span>Role-based access (admin / viewer)</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">📧</span>
+              <span>Automated concierge emails via Gmail API</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">📱</span>
+              <span>Installable PWA for iOS & Android</span>
+            </div>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">Next.js 16</span>
+            <span class="stack-tag">TypeScript</span>
+            <span class="stack-tag">Supabase</span>
+            <span class="stack-tag">NextAuth</span>
+            <span class="stack-tag">Google APIs</span>
+            <span class="stack-tag">Vercel</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kctolentino/vvl-app" class="project-link" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Momentum OS -->
+        <div class="project-card featured" id="project-momentum-os">
+          <div class="project-glow glow-green"></div>
+          <div class="project-header">
+            <div class="project-icon">⚡</div>
+            <div class="project-badges">
+              <span class="badge-featured">Featured</span>
+              <span class="badge-live">Desktop Electron App</span>
+            </div>
+          </div>
+          <h3 class="project-name">Momentum OS</h3>
+          <p class="project-tagline">Personal Productivity & Life Command Center</p>
+          <p class="project-desc">A comprehensive desktop productivity application packaged with <strong>Electron</strong> and built with React 19 & Firebase. Features <strong>8 Life Pillars</strong>, energy-based task selection, daily streak tracking, interactive <strong>Second Brain</strong> knowledge graph, and Google Calendar sync.</p>
+          <div class="project-highlights">
+            <div class="highlight">
+              <span class="highlight-icon">⚡</span>
+              <span>Energy-based task selection across 8 Life Pillars</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">🧠</span>
+              <span>Interactive node-based Second Brain knowledge graph</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">📅</span>
+              <span>Weekly visual time-blocker synced with Google Calendar</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">💻</span>
+              <span>Packaged Electron desktop app with menu bar quick-access</span>
+            </div>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">React 19</span>
+            <span class="stack-tag">Vite</span>
+            <span class="stack-tag">Electron</span>
+            <span class="stack-tag">Firebase Firestore</span>
+            <span class="stack-tag">Google Calendar API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kctolentino/productivity-app" class="project-link" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Momentum Creator Studio -->
+        <div class="project-card featured" id="project-creator-studio">
+          <div class="project-glow glow-orange"></div>
+          <div class="project-header">
+            <div class="project-icon">🎨</div>
+            <div class="project-badges">
+              <span class="badge-featured">Featured</span>
+              <span class="badge-live">Companion Web App</span>
+            </div>
+          </div>
+          <h3 class="project-name">Momentum Creator Studio</h3>
+          <p class="project-tagline">AI Social Growth Lab & Music Production Hub</p>
+          <p class="project-desc">A specialized companion web app to Momentum OS for creative pipelines. Features an <strong>AI Social Growth Lab</strong> with algorithmic 2-second hook retention scoring, multi-night music release sprints, and automated <strong>SRE Shift interlock protection</strong>.</p>
+          <div class="project-highlights">
+            <div class="highlight">
+              <span class="highlight-icon">🧪</span>
+              <span>AI Social Growth Lab with first 2-second hook scoring</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">🛡️</span>
+              <span>SRE Shift interlock protecting operational focus hours</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">🎵</span>
+              <span>Multi-night sequential music production & cover release pipeline</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">🔄</span>
+              <span>Shared Firestore microservice bridge with Momentum OS</span>
+            </div>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">React 19</span>
+            <span class="stack-tag">Vite</span>
+            <span class="stack-tag">Firebase Firestore</span>
+            <span class="stack-tag">Algorithmic Scoring</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kctolentino/momentum-os-creator-studio" class="project-link" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- AI Study Bot -->
+        <div class="project-card" id="project-studybot">
+          <div class="project-glow glow-green"></div>
+          <div class="project-header">
+            <div class="project-icon">🤖</div>
+          </div>
+          <h3 class="project-name">AI Study Bot</h3>
+          <p class="project-tagline">Automated Cloud Cert Practice System</p>
+          <p class="project-desc">An n8n workflow automation that generates AWS certification practice questions with automated answers, used in live enterprise training sessions.</p>
+          <div class="project-stack">
+            <span class="stack-tag">n8n</span>
+            <span class="stack-tag">AI/LLMs</span>
+            <span class="stack-tag">AWS Bedrock</span>
+            <span class="stack-tag">Workflow Automation</span>
+          </div>
+        </div>
+
+        <!-- AWS Assessment System -->
+        <div class="project-card" id="project-assessment">
+          <div class="project-glow glow-orange"></div>
+          <div class="project-header">
+            <div class="project-icon">📋</div>
+          </div>
+          <h3 class="project-name">AWS Assessment Engine</h3>
+          <p class="project-tagline">Serverless Student Evaluation System</p>
+          <p class="project-desc">A serverless assessment pipeline using AWS Lambda orchestrated by Step Functions with DynamoDB persistence for real-time student grading at enterprise scale.</p>
+          <div class="project-stack">
+            <span class="stack-tag">AWS Lambda</span>
+            <span class="stack-tag">Step Functions</span>
+            <span class="stack-tag">DynamoDB</span>
+            <span class="stack-tag">CloudWatch</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-label">// Skills</div>
+      <h2 class="section-title">What I work with</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <div class="skill-cat-icon">☁️</div>
+          <h3 class="skill-cat-title">Cloud & Infrastructure</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS Lambda</span>
+            <span class="skill-tag">DynamoDB</span>
+            <span class="skill-tag">Step Functions</span>
+            <span class="skill-tag">ECS / Fargate</span>
+            <span class="skill-tag">EC2</span>
+            <span class="skill-tag">S3</span>
+            <span class="skill-tag">VPC</span>
+            <span class="skill-tag">IAM</span>
+            <span class="skill-tag">CloudFormation</span>
+            <span class="skill-tag">CloudWatch</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-icon">⎈</div>
+          <h3 class="skill-cat-title">Containers & Orchestration</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Amazon ECS</span>
+            <span class="skill-tag">CKAD Labs</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-icon">🤖</div>
+          <h3 class="skill-cat-title">AI & Automation</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">n8n</span>
+            <span class="skill-tag">AWS Bedrock</span>
+            <span class="skill-tag">Google Gemini</span>
+            <span class="skill-tag">LLMs</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Agentic AI</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-icon">💻</div>
+          <h3 class="skill-cat-title">Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">Vercel</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-icon">🔐</div>
+          <h3 class="skill-cat-title">Security & DevOps</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">InfoSecOps</span>
+            <span class="skill-tag">AWS IAM</span>
+            <span class="skill-tag">CI/CD Pipelines</span>
+            <span class="skill-tag">IaC (CloudFormation)</span>
+            <span class="skill-tag">Observability</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-icon">📊</div>
+          <h3 class="skill-cat-title">Data & Analytics</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">MS Excel</span>
+            <span class="skill-tag">R</span>
+            <span class="skill-tag">Data Visualization</span>
+            <span class="skill-tag">SQL Analytics</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-label">// Certifications</div>
+      <h2 class="section-title">Credentials</h2>
+      <div class="certs-grid">
+
+        <div class="cert-card" id="cert-sa">
+          <div class="cert-badge cert-aws">
+            <span>AWS</span>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">AWS Solutions Architect – Associate</h3>
+            <p class="cert-issuer">Amazon Web Services · 2024</p>
+          </div>
+          <div class="cert-year">2024</div>
+        </div>
+
+        <div class="cert-card" id="cert-ai">
+          <div class="cert-badge cert-aws">
+            <span>AWS</span>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">AWS Certified AI Practitioner</h3>
+            <p class="cert-issuer">Amazon Web Services · 2024</p>
+          </div>
+          <div class="cert-year">2024</div>
+        </div>
+
+        <div class="cert-card" id="cert-ccp">
+          <div class="cert-badge cert-aws">
+            <span>AWS</span>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">AWS Certified Cloud Practitioner</h3>
+            <p class="cert-issuer">Amazon Web Services · 2023</p>
+          </div>
+          <div class="cert-year">2023</div>
+        </div>
+
+        <div class="cert-card" id="cert-kcna">
+          <div class="cert-badge cert-k8s">
+            <span>⎈</span>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Kubernetes & Cloud Native Associate (KCNA)</h3>
+            <p class="cert-issuer">CNCF · 2024</p>
+          </div>
+          <div class="cert-year">2024</div>
+        </div>
+
+        <div class="cert-card" id="cert-gda">
+          <div class="cert-badge cert-google">
+            <span>G</span>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Google Data Analytics Professional Certificate</h3>
+            <p class="cert-issuer">Google via Coursera · 2023</p>
+          </div>
+          <div class="cert-year">2023</div>
+        </div>
+
+        <div class="cert-card" id="cert-ee">
+          <div class="cert-badge cert-prc">
+            <span>PRC</span>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Licensed Electronics Engineer</h3>
+            <p class="cert-issuer">Professional Regulation Commission · 2018</p>
+          </div>
+          <div class="cert-year">2018</div>
+        </div>
+
+      </div>
+
+      <!-- Education -->
+      <div class="education-card" id="education">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-info">
+          <h3 class="edu-degree">Bachelor of Science in Electronics Engineering</h3>
+          <div class="edu-school">Lyceum of the Philippines University – Laguna</div>
+          <div class="edu-year">2013 – 2018</div>
+        </div>
+        <div class="edu-honors">
+          <span class="honor-badge">Cum Laude</span>
+          <span class="honor-badge">Consistent Dean's List</span>
+          <span class="honor-badge">Top 1 Academic Excellence</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-label">// Contact</div>
+      <h2 class="section-title">Let's connect</h2>
+      <p class="contact-subtitle">Whether it's a cloud project, a training collaboration, or just to say hi — my inbox is open.</p>
+      <div class="contact-grid">
+        <a href="mailto:kayecristine.tolentino@gmail.com" class="contact-card" id="contact-email">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">kayecristine.tolentino@gmail.com</div>
+        </a>
+        <a href="https://www.linkedin.com/in/kayecristine" class="contact-card" id="contact-linkedin" target="_blank" rel="noopener">
+          <div class="contact-icon">💼</div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">linkedin.com/in/kayecristine</div>
+        </a>
+        <a href="https://github.com/kctolentino" class="contact-card" id="contact-github" target="_blank" rel="noopener">
+          <div class="contact-icon">💻</div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">github.com/kctolentino</div>
+        </a>
+        <a href="tel:+639773166317" class="contact-card" id="contact-phone">
+          <div class="contact-icon">📞</div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">+63 977 316 6317</div>
+        </a>
+        <a href="Resume_Kaye Cristine Tolentino (v2).pdf" class="contact-card" id="contact-cv" download>
+          <div class="contact-icon">📄</div>
+          <div class="contact-label">Resume</div>
+          <div class="contact-value">Download PDF</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">KCT<span class="dot">.</span></div>
+        <div class="footer-social-links">
+          <a href="https://github.com/kctolentino" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <span class="footer-sep">·</span>
+          <a href="https://www.linkedin.com/in/kayecristine" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <span class="footer-sep">·</span>
+          <a href="mailto:kayecristine.tolentino@gmail.com" aria-label="Email">Email</a>
+        </div>
+        <p class="footer-text">Built with ☁️ and a lot of caffeine · Taguig City, Philippines</p>
+        <p class="footer-copy">© 2026 Kaye Cristine Tolentino</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
