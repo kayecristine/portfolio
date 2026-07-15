@@ -179,8 +179,8 @@ def build_pdf():
         "Full-Stack Desktop & Web Applications",
         "2026",
         [
-            "Built desktop productivity command center using Electron, React 19, and Firebase featuring 8 Life Pillars, energy-based task selection, interactive Second Brain knowledge graph, and Google Calendar sync.",
-            "Developed companion AI Creator Studio web app featuring algorithmic 2-second hook retention scoring, multi-night music release pipelines, and SRE shift interlock protection.",
+            "Built desktop productivity command center using Electron, React 19, and Firebase featuring 8 Life Pillars, energy-based task selection, and Google Calendar sync.",
+            "Developed companion AI Creator Studio web app featuring algorithmic 2-second hook retention scoring and multi-night music release pipelines.",
         ]
     )
 
