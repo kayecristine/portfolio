@@ -117,9 +117,21 @@ def build_pdf():
     story += section("Work Experience")
 
     story += job(
+        "Site Reliability Engineer",
+        "Cambridge University Press and Assessment",
+        "February 2026 – Present",
+        [
+            "Manage and optimize mission-critical cloud infrastructure across AWS and Kubernetes environments, ensuring high availability, system reliability, and SLA adherence.",
+            "Implement AI-driven operations (AIOps) workflows, automated telemetry analysis, and proactive incident detection to minimize system downtime.",
+            "Develop automated remediation pipelines, CI/CD deployment guardrails, and infrastructure as code (IaC) to streamline global assessment platform operations.",
+            "Enhance system observability through distributed tracing, log aggregation, and real-time alert monitoring to reduce Mean Time to Resolution (MTTR).",
+        ]
+    )
+
+    story += job(
         "Cloud Engineer Technical Trainer",
         "Apper Digital Inc.",
-        "November 2024 – Present",
+        "November 2024 – February 2026",
         [
             "Built automated assessment system using AWS Lambda, DynamoDB, and Step Functions for real-time student evaluation and grading.",
             "Designed AWS hands-on labs covering EC2, ECS, S3, VPC, IAM, and serverless architectures for enterprise training programs.",
