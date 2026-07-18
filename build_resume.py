@@ -228,6 +228,7 @@ def build_pdf():
             "AWS Certified Cloud Practitioner (2023)",
         ]),
         ("Kubernetes & Cloud Native", [
+            "Certified Kubernetes Application Developer (CKAD) | The Linux Foundation (2026)",
             "Kubernetes and Cloud Native Associate (KCNA) | CNCF (2024)",
         ]),
         ("Data Analytics", [
